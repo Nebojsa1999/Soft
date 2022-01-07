@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="defaultdomains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Status_DOMEN" id="17EDD943-D111-5562-7946-78CAA57EFB32">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:53:07 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>26</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="Novo" description=""/>
+<valueDef value="Sniženo" description=""/>
+<valueDef value="Staro" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Materijal_DOMEN" id="66EFCB24-79E0-BA83-6DCE-F7D36F3F8191">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:53:04 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>26</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Namena_DOMEN" id="81B53AB2-0947-3C71-2C2C-DBA97330D592">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:59:36 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>26</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="Fudbal" description=""/>
+<valueDef value="Košarka" description=""/>
+<valueDef value="Tenis" description=""/>
+<valueDef value="Teretana" description=""/>
+<valueDef value="Trčanje" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Veličina_DOMEN" id="AA09CF12-D245-C327-457B-535396E6951B">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:58:46 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>7</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="L" description=""/>
+<valueDef value="M" description=""/>
+<valueDef value="S" description=""/>
+<valueDef value="XL" description=""/>
+<valueDef value="XXL" description=""/>
+<valueDef value="XXXL" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Pol_DOMEN" id="B90D497E-D269-41C9-B03F-358D1FC31CD6">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:52:59 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>15</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="muško" description=""/>
+<valueDef value="ženski" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="TipZaposlenja_DOMEN" id="D63CFF7C-3603-95D3-290F-467567D56E2A">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:05:18 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>26</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="Menadžer" description=""/>
+<valueDef value="Prodavačica" description=""/>
+<valueDef value="Radnik u fabrici" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Unknown" id="DOM3000004">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 13:50:56 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

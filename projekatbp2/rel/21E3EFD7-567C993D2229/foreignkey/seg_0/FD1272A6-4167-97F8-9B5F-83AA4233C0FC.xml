@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FD1272A6-4167-97F8-9B5F-83AA4233C0FC" containerWithKeyObject="CA07CBBD-DDBB-C26E-C684-2442D53B6138" localFKIndex="C7D9BC81-98F3-6C2A-2905-2AD4F6746928" name="Nadgleda_Radnik_u_fabrici_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>C32B32CE-5FF5-EC6B-718A-F59DD4E63C4F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Radnik_u_fabrici</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7FB31C18-DDCE-08C2-B6FE-3D0B8CD0DDCD</referredTableID>
+<keyObject>D9B6BE79-63E5-1E35-04CB-25127D9DB503</keyObject>
+<referredKeyID>D9B6BE79-63E5-1E35-04CB-25127D9DB503</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_R</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

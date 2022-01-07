@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A699B3E6-C42E-A358-7612-0B265E838434" containerWithKeyObject="11B46EB3-A71D-F5B0-D25F-CD7A632E8580" localFKIndex="99D8FF53-3BB8-9B2D-F664-03321884DE02" name="Fabrika_Brend_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>94775718-B3CF-344C-659F-DE70108E0F47</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Brend</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>17DAFE39-7EBF-3C9C-1A59-9DE89FBBAA92</referredTableID>
+<keyObject>796A34B3-44CA-AE7C-8195-BA1397645361</keyObject>
+<referredKeyID>796A34B3-44CA-AE7C-8195-BA1397645361</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_BSO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

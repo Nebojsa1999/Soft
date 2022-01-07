@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4AAF4DE9-A243-A9EE-147C-5017FA4CA47E" containerWithKeyObject="914C5CB5-D73A-8821-BC75-71B3B990079D" localFKIndex="562EA1B6-D939-309B-FAB3-AB2ABE3F3555" name="Sportksa_oprema_Vrsta_SO_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>BE4A418A-472A-1A56-79CC-3C9DDDA6610D</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Vrsta_SO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AAA0A123-4868-796D-A38E-D21FEE6427E3</referredTableID>
+<keyObject>7B08349D-A488-303D-42E9-4065B7A82ABB</keyObject>
+<referredKeyID>7B08349D-A488-303D-42E9-4065B7A82ABB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_VSO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

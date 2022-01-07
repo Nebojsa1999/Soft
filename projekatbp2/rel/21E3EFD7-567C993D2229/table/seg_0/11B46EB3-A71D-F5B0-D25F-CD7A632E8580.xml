@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11B46EB3-A71D-F5B0-D25F-CD7A632E8580" name="Fabrika">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>D48CA8A6-FDC3-ED5F-B649-491C18A86E8F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_FSO" id="A5029E30-1115-5717-B858-B816B83D95F3">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>3B87A03E-172C-3C77-CA68-73BF42B54219</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa_FSO" id="1C0BCD12-A3E2-8AB8-B122-5F3F7508DFE1">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>453359E9-39B7-F838-AAD8-348B52AD570C</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Industrija_SO_ID_ISO" id="C663EDF9-1B55-55F8-2020-1606E6588BEB">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>305C4F63-63F2-EEB4-E473-888F65F26068</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E292E5F-3992-0F82-0F89-4F592CD23E14" referredColumn="3743ACD0-259C-DDCA-0073-E6121A0C0B3A"/>
+</associations>
+</Column>
+<Column name="Brend_ID_BSO" id="2941D445-E388-33D3-B26B-1CC88B646E64">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>0E81E144-C9D3-782F-2B69-1FA0BD3423BD</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A699B3E6-C42E-A358-7612-0B265E838434" referredColumn="64CC1688-0392-82CE-CD7B-614FFC75CF1A"/>
+</associations>
+</Column>
+<Column name="Grad_ID_G" id="EAACC464-26A7-3887-E757-26243A5BECC2">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>E3DE3E9C-860D-0572-8DA5-3E4FDB1F6F88</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A601FB5-26EE-5EE7-91F3-259B76A5D09C" referredColumn="E817BB28-E0B8-15D0-92F0-BC480C581252"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F4D8317-95A3-30C0-2BF0-9F0E24413227" name="Fabrika_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>847D8945-0080-3FDB-2469-D8B0B924C35B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5029E30-1115-5717-B858-B816B83D95F3"/>
+<colUsage columnID="C663EDF9-1B55-55F8-2020-1606E6588BEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99D8FF53-3BB8-9B2D-F664-03321884DE02" name="Fabrika_Brend_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>94775718-B3CF-344C-659F-DE70108E0F47</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2941D445-E388-33D3-B26B-1CC88B646E64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF57340D-D0D8-81B6-ABCF-4A9150ACE6AD" name="Fabrika_Grad_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>191DA2B1-F92F-6BB8-BDAB-55948568C569</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAACC464-26A7-3887-E757-26243A5BECC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="646058C2-12DD-C012-944C-503683735525" name="Fabrika_Industrija_SO_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>296C9850-58DC-837F-113C-1BB3929077CF</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C663EDF9-1B55-55F8-2020-1606E6588BEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

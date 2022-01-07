@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E1F1093-BE70-314C-28AF-9A355164931D" name="Industrija SO">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:11:33 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonymToDisplay>Industrija</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ISO" id="5D312FE8-FAC9-7AFE-8BCB-E7F7710979C1">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:11:44 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Drzava" id="CA5A2F67-6EF4-C051-6D96-28BD2F50BF48">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:12:02 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8B7677A2-0599-3830-DDD6-DD4F246F1434" name="Industrija PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:11:59 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<synonym>IDSO</synonym>
+<newElementsIDs>5D312FE8-FAC9-7AFE-8BCB-E7F7710979C1</newElementsIDs>
+<usedAttributes>
+<attributeRef>5D312FE8-FAC9-7AFE-8BCB-E7F7710979C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

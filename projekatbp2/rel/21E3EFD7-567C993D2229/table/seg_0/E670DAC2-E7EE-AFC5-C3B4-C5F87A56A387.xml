@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E670DAC2-E7EE-AFC5-C3B4-C5F87A56A387" name="Kupuje">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>2BD344C3-2356-2C4B-2C41-E26344731D57</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Sportksa_oprema_ID_SO" id="0E883C09-A57C-39BF-15A4-0DCB2D776D47">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>DFF7AF95-DC16-209B-C808-9CF6DA62C059</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4299AEF7-9F8B-9D2F-3689-9B593F1AC1AE" referredColumn="5D160672-4B92-5589-6194-9020B1610216"/>
+</associations>
+</Column>
+<Column name="Kupac_ID_K" id="19D2CAEC-1816-E9C2-3E31-4E326F64E52B">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>7600F8AB-9A43-B083-E345-A34DA11D0E6D</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D190805-724C-AA0B-0D38-6DAB5E35A7F4" referredColumn="18A52140-D71D-B348-A5BC-FC7A9F3F4B92"/>
+</associations>
+</Column>
+<Column name="Kupuje_ID" id="0EA2C717-887B-9383-BA50-97A5AC55E978">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Dobija_Dobija_ID" id="6E411F02-A39F-09DC-602E-75F8922D64ED">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD9D8F65-87BE-6C5D-15DA-372FD7071F01" referredColumn="0109ED74-D6BE-7673-14B1-819C860C6559"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D8B4F49-95F7-89E7-6E83-237ED5C91BEC" name="Kupuje_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0EA2C717-887B-9383-BA50-97A5AC55E978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB6C1D32-FEAB-DA3C-19ED-DE8B08EF3382" name="Kupuje__IDX">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ECBC1D82-55C6-0721-AF65-2C0BB522E1F4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6E411F02-A39F-09DC-602E-75F8922D64ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1CA6938-EF62-7CB5-2AFA-FF8261C5DC09" name="Kupuje_Sportksa_oprema_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>EB0CDF96-D350-24BC-5E7D-869A2733589F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E883C09-A57C-39BF-15A4-0DCB2D776D47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EC02719-F15D-815C-67DA-71C9B6A40C98" name="Kupuje_Kupac_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>BF71DEE7-2C8D-3127-752F-6085422FCB72</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19D2CAEC-1816-E9C2-3E31-4E326F64E52B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3A6619B-B067-6400-5F83-E8DD0B9A5FD1" name="Kupuje_Dobija_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>ECBC1D82-55C6-0721-AF65-2C0BB522E1F4</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E411F02-A39F-09DC-602E-75F8922D64ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

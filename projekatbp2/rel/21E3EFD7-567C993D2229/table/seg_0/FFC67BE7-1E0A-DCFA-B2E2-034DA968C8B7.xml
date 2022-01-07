@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFC67BE7-1E0A-DCFA-B2E2-034DA968C8B7" name="Grad">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>0F892EF4-D579-C075-D0ED-8591852C9F20</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_G" id="E817BB28-E0B8-15D0-92F0-BC480C581252">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>DF6D42D5-4B93-41BE-C311-35847DBBEE47</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Naziv_G" id="C13F5B2D-F668-30AB-922C-E9C794E42BF8">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>E9737446-0D80-7BED-C518-57EBEC2AB85C</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PostanskiBr" id="4300C29C-F21A-77CD-88EA-23EFB94CBD51">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>31CA7477-BF45-87CF-102D-83492AEDB381</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE4F354A-204A-1C7C-202B-793B1E709F25" name="Grad_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>3AA5A391-A211-815F-BFC7-B73C9C3C1973</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E817BB28-E0B8-15D0-92F0-BC480C581252"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

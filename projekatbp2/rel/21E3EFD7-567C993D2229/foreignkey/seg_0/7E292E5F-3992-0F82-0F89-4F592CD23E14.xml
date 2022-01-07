@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7E292E5F-3992-0F82-0F89-4F592CD23E14" containerWithKeyObject="11B46EB3-A71D-F5B0-D25F-CD7A632E8580" localFKIndex="646058C2-12DD-C012-944C-503683735525" name="Fabrika_Industrija_SO_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>296C9850-58DC-837F-113C-1BB3929077CF</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Industrija_SO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>43C4CDD6-D785-9637-31C6-ECFE19FD6B9D</referredTableID>
+<keyObject>B2083907-FF72-74EB-F265-A50AC4A1489C</keyObject>
+<referredKeyID>B2083907-FF72-74EB-F265-A50AC4A1489C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ISO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF8A38A2-3124-3161-19D9-08AE51B6053B" name="Prodavnica">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>2390291E-2ED6-2171-1113-84CF9DBCF9D0</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PSO" id="1CAF6A78-3691-E5CF-17C5-3441AE5E20B5">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>AAC87C8E-DD8C-4495-1D8E-1E6CB4601603</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa_PSO" id="F8D39F79-04BD-EE08-7175-53D93403E2C7">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>0D5EF3DE-0C8B-44C2-E54F-FF5FE36CBD77</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Naziv_PSO" id="59B875C7-F630-9C94-B978-1A7642F45156">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>779D7E08-DA1E-A537-E0C1-967849557648</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Industrija_SO_ID_ISO" id="F0D73D64-60E2-AECC-22E1-D8C0915478F6">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>AF240817-4F61-7D62-D42E-886C25840648</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="231063D7-1E90-29AB-E70A-AA46870200F4" referredColumn="3743ACD0-259C-DDCA-0073-E6121A0C0B3A"/>
+</associations>
+</Column>
+<Column name="Prodavičica_ID_R" id="E063984B-D0DB-A672-EC94-EE388E39D811">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>9286FF92-0714-B1A5-08AA-3982286FC935</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69237A85-AD0F-FDCF-2F47-4BCACE66934B" referredColumn="1E5ADE1F-F638-D441-7E3D-A6BABE4C2900"/>
+</associations>
+</Column>
+<Column name="Menadžer_ID_R" id="D50C68C6-D3C5-9D1D-31B7-3E4D4AFBF328">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>E35A01ED-F675-7F0F-F9B0-7F91076F8A57</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E923DD2-939A-FB6A-9706-810E8D26FE89" referredColumn="6E1E0462-A8EE-B863-0C8E-519D09B94AAE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4805E43-9B85-9260-A1BB-69579A4079E8" name="Prodavnica_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>A3EB1716-4FD8-A753-B537-32068F0F9F45</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CAF6A78-3691-E5CF-17C5-3441AE5E20B5"/>
+<colUsage columnID="F0D73D64-60E2-AECC-22E1-D8C0915478F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B240FC6-7484-F20A-FB3E-9A01418A04E7" name="Prodavnica_Menadžer_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>7E02F1D5-028A-B713-1A1C-4CF60EEDE91E</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D50C68C6-D3C5-9D1D-31B7-3E4D4AFBF328"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A190DD01-E155-2673-FAC6-33988D96AC11" name="Prodavnica_Prodavičica_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>B07D0B9D-DBFF-62FC-5B8C-C18E0B99CCF7</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E063984B-D0DB-A672-EC94-EE388E39D811"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00F8EC41-6D9A-1AD1-9547-B7283F2F8D14" name="Prodavnica_Industrija_SO_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>F25794CB-595D-FECC-8246-2B1C6758AE14</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0D73D64-60E2-AECC-22E1-D8C0915478F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

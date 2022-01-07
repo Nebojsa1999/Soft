@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Nadgleda" directorySegmentName="seg_0" id="C32B32CE-5FF5-EC6B-718A-F59DD4E63C4F">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:37:26 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>nadgleda</nameOnSource>
+<nameOnTarget>je_nagledan</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3D7B9B5F-1353-FCAE-F56A-C08FCE1BAE64</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3D7B9B5F-1353-FCAE-F56A-C08FCE1BAE64</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

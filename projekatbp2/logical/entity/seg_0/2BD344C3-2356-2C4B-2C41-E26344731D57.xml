@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BD344C3-2356-2C4B-2C41-E26344731D57" name="Kupuje">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 18:02:03 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_SO" id="DFF7AF95-DC16-209B-C808-9CF6DA62C059">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 18:13:00 UTC</createdTime>
+<generatorID>EB0CDF96-D350-24BC-5E7D-869A2733589F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>DF608C57-CC63-0E56-70BD-5121008D2EBB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_K" id="7600F8AB-9A43-B083-E345-A34DA11D0E6D">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 18:13:13 UTC</createdTime>
+<generatorID>BF71DEE7-2C8D-3127-752F-6085422FCB72</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>37B9143E-43B8-9678-3EA7-77BB4F4EA627</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

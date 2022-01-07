@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8B792FE3-4BA0-CADB-A074-0D3125207D6B" containerWithKeyObject="E6575E79-0945-D446-B87A-8AA2E4D07094" localFKIndex="A2FC55EC-3678-819A-7CA6-6F86403E22F4" name="Račun_Kasa_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>93EB5923-53A6-7DA4-876E-9D54BDFB2240</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Kasa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>646479FA-ADC3-5691-7BA1-9213BAE4C048</referredTableID>
+<keyObject>32ED5D7E-6B6B-581F-32B9-8B637E8508A6</keyObject>
+<referredKeyID>32ED5D7E-6B6B-581F-32B9-8B637E8508A6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_KA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

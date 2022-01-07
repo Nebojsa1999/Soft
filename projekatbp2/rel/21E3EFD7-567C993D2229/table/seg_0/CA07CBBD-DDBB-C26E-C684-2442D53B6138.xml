@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA07CBBD-DDBB-C26E-C684-2442D53B6138" name="Nadgleda">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Radnik_u_fabrici_ID_R" id="F18F165A-586A-2AA3-856C-9F5BC62869D3">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD1272A6-4167-97F8-9B5F-83AA4233C0FC" referredColumn="EDF49AF3-0E6F-960A-A795-9E37DB9D300B"/>
+</associations>
+</Column>
+<Column name="Radnik_u_fabrici_ID_R1" id="419D3854-B300-4D77-CAC5-0B933FF06B9A">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3A88458-EB47-26AC-CFAD-7F3BBC8E526C" referredColumn="EDF49AF3-0E6F-960A-A795-9E37DB9D300B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAD68E4F-0438-B0DB-8B2A-58A9DE921B5E" name="Nadgleda_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F18F165A-586A-2AA3-856C-9F5BC62869D3"/>
+<colUsage columnID="419D3854-B300-4D77-CAC5-0B933FF06B9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7D9BC81-98F3-6C2A-2905-2AD4F6746928" name="Nadgleda_Radnik_u_fabrici_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>C32B32CE-5FF5-EC6B-718A-F59DD4E63C4F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F18F165A-586A-2AA3-856C-9F5BC62869D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="759939B9-ACD2-FCD0-DB04-37DE3BA6A4B2" name="Nadgleda_Radnik_u_fabrici_FKv1">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>C32B32CE-5FF5-EC6B-718A-F59DD4E63C4F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="419D3854-B300-4D77-CAC5-0B933FF06B9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

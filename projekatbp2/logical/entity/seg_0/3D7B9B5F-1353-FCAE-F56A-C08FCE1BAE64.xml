@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D7B9B5F-1353-FCAE-F56A-C08FCE1BAE64" name="Radnik u fabrici">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:03:39 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>5C93F332-C3D1-315E-EE63-7B9D9D3C88B7</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FSO" id="C2844905-1791-2229-08E8-307A138ED61A">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:33:06 UTC</createdTime>
+<generatorID>09C24605-F4C5-BF00-179F-DE485ADDA92B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>3B87A03E-172C-3C77-CA68-73BF42B54219</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ISO" id="880EEEF5-DAC4-F2C8-6FA1-D00B58587915">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:33:06 UTC</createdTime>
+<generatorID>09C24605-F4C5-BF00-179F-DE485ADDA92B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>305C4F63-63F2-EEB4-E473-888F65F26068</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

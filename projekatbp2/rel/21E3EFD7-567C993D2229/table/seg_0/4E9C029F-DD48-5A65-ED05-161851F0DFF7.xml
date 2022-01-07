@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E9C029F-DD48-5A65-ED05-161851F0DFF7" name="Radnik">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>5C93F332-C3D1-315E-EE63-7B9D9D3C88B7</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_R" id="6DA29D2D-9E6B-4C32-F0F6-9F47D69439B7">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>A335093B-3F49-E94F-4C48-78D8DBB46781</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ime_R" id="28130CCB-CC1D-4B1F-8CEA-4AB9D8B2D421">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>CA7A0332-8C35-95AA-B7A3-31A31336B080</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prezime_R" id="249F0E5A-A228-7195-2B6D-B2F5DFC22451">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>E93BFD74-DEC7-8088-9CE8-B7D76587DEFA</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa_R" id="E3776240-1C2E-33E0-C5C5-F91EF0C2557D">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>D994FC43-7B14-356E-9280-20BB104A1207</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BrojTelefona_R" id="EC43F184-5935-3624-87A8-434226022B22">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>4572685A-B9F9-BE65-9EB1-1272903E1049</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Plata" id="396A5CBD-D734-C7E8-F935-4E1984BAB5DB">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>B06D36B2-3AC7-E221-3837-C836CF98B7D5</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Industrija_SO_ID_ISO" id="F850EB0B-7325-E403-D578-4C35B17241B6">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>B11B0554-1A79-406D-7B88-79D9988E65EE</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90CC4C7B-10DD-9ECA-8CE1-7BC9867AF77B" referredColumn="3743ACD0-259C-DDCA-0073-E6121A0C0B3A"/>
+</associations>
+</Column>
+<Column name="TipZaposlenja" id="AE7A7598-BB34-D360-274A-EA88470DF327">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>C76E6AF9-2BAF-B6AA-94F1-BD3C32DC26BC</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<constraintName>CH_INH_Radnik</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<domain>D63CFF7C-3603-95D3-290F-467567D56E2A</domain>
+<listOfValues>
+<valueDef value="Menadžer" description="entity Menadžer"/>
+<valueDef value="Prodavičica" description="entity Prodavičica"/>
+<valueDef value="Radnik_u_fabrici" description="entity Radnik u fabrici"/>
+</listOfValues>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D65E5AA5-1FD2-2FB1-12B4-4B8DE8160CEC" name="Radnik_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>00911AF9-C012-D5A5-1838-23227D6F808B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DA29D2D-9E6B-4C32-F0F6-9F47D69439B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E4D21E0-ABA3-3812-455D-859466D91DB5" name="Radnik_Industrija_SO_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>BCFAD2B9-63C5-E697-9F5B-407AE2DE69C3</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F850EB0B-7325-E403-D578-4C35B17241B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

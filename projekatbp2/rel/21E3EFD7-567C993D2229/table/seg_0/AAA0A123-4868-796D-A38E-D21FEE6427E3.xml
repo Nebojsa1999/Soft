@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAA0A123-4868-796D-A38E-D21FEE6427E3" name="Vrsta_SO">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>39A0139A-0322-7936-7309-1ECD30E0B07F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VSO" id="151FB7D8-A111-380E-8889-8DC4438DCB2F">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>D62B688D-1B9B-A0A0-0798-1259A0D050D0</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Naziv_VSO" id="084CF2D2-9B26-FFEF-3256-B05CF7EAA34F">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>57D90262-D8AC-1E2D-F513-483C645938A0</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Radnik_u_fabrici_ID_R" id="DF7CBD60-44EA-030B-8DCE-89B7831743C7">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>6E71AAA8-69DB-F9CB-BD30-397F3F532F7B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8C14F16-6FB8-EE91-5EC9-C6640627B90E" referredColumn="EDF49AF3-0E6F-960A-A795-9E37DB9D300B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B08349D-A488-303D-42E9-4065B7A82ABB" name="Vrsta_SO_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>CDE9C569-4021-810C-D2FC-DDE942725725</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="151FB7D8-A111-380E-8889-8DC4438DCB2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B323E8FD-A50A-6CF6-AE0C-A7C5D54C6BFA" name="Vrsta_SO_Radnik_u_fabrici_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>73F74CE6-C5F5-46D5-2A8C-D76B4216BB8A</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF7CBD60-44EA-030B-8DCE-89B7831743C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

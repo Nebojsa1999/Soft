@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Nalazi" directorySegmentName="seg_0" id="191DA2B1-F92F-6BB8-BDAB-55948568C569">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:40:39 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<targetPk>3AA5A391-A211-815F-BFC7-B73C9C3C1973</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D48CA8A6-FDC3-ED5F-B649-491C18A86E8F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0F892EF4-D579-C075-D0ED-8591852C9F20</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

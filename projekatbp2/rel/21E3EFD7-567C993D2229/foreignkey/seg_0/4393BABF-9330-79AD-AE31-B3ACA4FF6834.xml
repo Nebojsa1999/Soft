@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4393BABF-9330-79AD-AE31-B3ACA4FF6834" containerWithKeyObject="4F9C7AFF-127A-0E93-800B-360AB031A3B9" localFKIndex="0E6C3F5A-BD09-C8B0-3786-0F399A05EDA5" name="Dobija_Račun_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>EEEEAEF2-97FE-850B-1098-E53E8C03B100</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Račun</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E6575E79-0945-D446-B87A-8AA2E4D07094</referredTableID>
+<keyObject>6BC747DE-DC2D-E538-A57C-BD059E99B51D</keyObject>
+<referredKeyID>6BC747DE-DC2D-E538-A57C-BD059E99B51D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_RA,Kasa_ID_KA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

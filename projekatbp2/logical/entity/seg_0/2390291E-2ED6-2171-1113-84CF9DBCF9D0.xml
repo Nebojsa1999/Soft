@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2390291E-2ED6-2171-1113-84CF9DBCF9D0" name="Prodavnica">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:22:26 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PSO" id="AAC87C8E-DD8C-4495-1D8E-1E6CB4601603">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:44:55 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresa_PSO" id="0D5EF3DE-0C8B-44C2-E54F-FF5FE36CBD77">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:45:17 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Naziv_PSO" id="779D7E08-DA1E-A537-E0C1-967849557648">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:45:35 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ISO" id="AF240817-4F61-7D62-D42E-886C25840648">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 16:06:22 UTC</createdTime>
+<generatorID>F25794CB-595D-FECC-8246-2B1C6758AE14</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>5D312FE8-FAC9-7AFE-8BCB-E7F7710979C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_R" id="9286FF92-0714-B1A5-08AA-3982286FC935">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:21:45 UTC</createdTime>
+<generatorID>B07D0B9D-DBFF-62FC-5B8C-C18E0B99CCF7</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>A335093B-3F49-E94F-4C48-78D8DBB46781</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_R1" id="E35A01ED-F675-7F0F-F9B0-7F91076F8A57">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 17:26:22 UTC</createdTime>
+<generatorID>7E02F1D5-028A-B713-1A1C-4CF60EEDE91E</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<referedAttribute>A335093B-3F49-E94F-4C48-78D8DBB46781</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A3EB1716-4FD8-A753-B537-32068F0F9F45" name="Prodavnica PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 15:45:16 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>AAC87C8E-DD8C-4495-1D8E-1E6CB4601603,F25794CB-595D-FECC-8246-2B1C6758AE14</newElementsIDs>
+<usedAttributes>
+<attributeRef>AAC87C8E-DD8C-4495-1D8E-1E6CB4601603</attributeRef>
+<attributeRef>AF240817-4F61-7D62-D42E-886C25840648</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

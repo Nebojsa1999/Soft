@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Poslata" directorySegmentName="seg_0" id="DA431510-8DB1-E6AA-3D31-C1736D42ABB8">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 18:03:06 UTC</createdTime>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<engineerTo>
+<item key="21E3EFD7-7F7C-A8E1-5009-567C993D2229" value="true"/>
+</engineerTo>
+<sourcePk>3F70CFB4-8DFA-0CB4-FA50-915AC6ABC966</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F18E286B-C975-C353-1F3E-1E9E58A182AA</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D7F3A212-5D0D-8116-F19C-EE7CE452235C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

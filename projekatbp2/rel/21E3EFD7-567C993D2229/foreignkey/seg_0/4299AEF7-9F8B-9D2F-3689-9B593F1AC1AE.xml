@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4299AEF7-9F8B-9D2F-3689-9B593F1AC1AE" containerWithKeyObject="E670DAC2-E7EE-AFC5-C3B4-C5F87A56A387" localFKIndex="E1CA6938-EF62-7CB5-2AFA-FF8261C5DC09" name="Kupuje_Sportksa_oprema_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>EB0CDF96-D350-24BC-5E7D-869A2733589F</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<referredTableLongName>Sportksa_oprema</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>914C5CB5-D73A-8821-BC75-71B3B990079D</referredTableID>
+<keyObject>B1155434-45DB-93DF-289C-58081FC8860E</keyObject>
+<referredKeyID>B1155434-45DB-93DF-289C-58081FC8860E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

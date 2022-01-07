@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FB31C18-DDCE-08C2-B6FE-3D0B8CD0DDCD" name="Radnik_u_fabrici">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>3D7B9B5F-1353-FCAE-F56A-C08FCE1BAE64</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_R" id="EDF49AF3-0E6F-960A-A795-9E37DB9D300B">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>A335093B-3F49-E94F-4C48-78D8DBB46781</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE61CBE9-C2DF-C441-2B55-0FF7F0E12440" referredColumn="6DA29D2D-9E6B-4C32-F0F6-9F47D69439B7"/>
+</associations>
+</Column>
+<Column name="Fabrika_ID_FSO" id="8A17F020-B05D-B3FE-12F3-76CC222265A4">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>C2844905-1791-2229-08E8-307A138ED61A</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="530A7E91-4B5E-FC7F-2CDD-95126AD2EA82" referredColumn="A5029E30-1115-5717-B858-B816B83D95F3"/>
+</associations>
+</Column>
+<Column name="Fabrika_ID_ISO" id="0C5DDF90-A113-A1AF-7ADA-B327FC9A23C7">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>880EEEF5-DAC4-F2C8-6FA1-D00B58587915</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="530A7E91-4B5E-FC7F-2CDD-95126AD2EA82" referredColumn="C663EDF9-1B55-55F8-2020-1606E6588BEB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D9B6BE79-63E5-1E35-04CB-25127D9DB503" name="Radnik_u_fabrici_PK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>00911AF9-C012-D5A5-1838-23227D6F808B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDF49AF3-0E6F-960A-A795-9E37DB9D300B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BF60747-0DCD-593D-D1FE-669C7593AFD6" name="Radnik_u_fabrici_Radnik_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:23 UTC</createdTime>
+<generatorID>83456B91-E71A-914A-5EB3-F86333ED2886</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDF49AF3-0E6F-960A-A795-9E37DB9D300B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="536469F4-E0B2-554A-E55D-25BDB8B686F1" name="Radnik_u_fabrici_Fabrika_FK">
+<createdBy>bg</createdBy>
+<createdTime>2022-01-07 19:58:24 UTC</createdTime>
+<generatorID>09C24605-F4C5-BF00-179F-DE485ADDA92B</generatorID>
+<ownerDesignName>projekatbp2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A17F020-B05D-B3FE-12F3-76CC222265A4"/>
+<colUsage columnID="0C5DDF90-A113-A1AF-7ADA-B327FC9A23C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

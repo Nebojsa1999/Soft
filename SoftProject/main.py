@@ -14,6 +14,8 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 from keras.preprocessing.image import ImageDataGenerator
+
+
 def load_image(path):
     return cv2.cvtColor(cv2.imread(path), cv2.COLOR_BGR2GRAY)
 
@@ -87,17 +89,17 @@ def defineTrainingImages(pathFolder):
     data_augmentation = tf.keras.Sequential([
         layers.RandomFlip("horizontal_and_vertical"),
         layers.RandomRotation(0.2),
-        layers.RandomTranslation(height_factor=0.2, width_factor = 0.2)
+        layers.RandomTranslation(height_factor=0.2, width_factor=0.2)
     ])
 
     model = Sequential([
         layers.Rescaling(1. / 255, input_shape=(img_height, img_width, 3)),
         data_augmentation,
+        layers.Conv2D(16, 3, padding='same', activation='relu'),
+        layers.MaxPooling2D(),
+        layers.Conv2D(32, 3, padding='same', activation='relu'),
+        layers.MaxPooling2D(),
         layers.Conv2D(64, 3, padding='same', activation='relu'),
-        layers.MaxPooling2D(),
-        layers.Conv2D(128, 3, padding='same', activation='relu'),
-        layers.MaxPooling2D(),
-        layers.Conv2D(256, 3, padding='same', activation='relu'),
         layers.MaxPooling2D(),
         layers.Flatten(),
         layers.Dense(128, activation='relu'),
@@ -140,12 +142,8 @@ def defineTrainingImages(pathFolder):
     plt.title('Training and Validation Loss')
     plt.show()
 
-    #train_datagen_augmented = ImageDataGenerator
-
-    num_total_cat, num_correct_cat = 0, 0
-    num_total_dog, num_correct_dog = 0, 0
-
-
+    num_covid, num_correct_covid = 0, 0
+    num_normal, num_correct_normal = 0, 0
 
     for directory, subdirectories, files in os.walk(pathFolder):
         for file in files:
@@ -159,20 +157,19 @@ def defineTrainingImages(pathFolder):
 
             predictions = model.predict(img_array)
             pred = predictions.argmax()
-            if pred == 1:
-                num_correct_dog += 1
+            if pred == 0:
+                num_correct_covid += 1
             else:
-                num_total_cat += 1
+                num_correct_normal += 1
             score = tf.nn.softmax(predictions[0])
-
 
             print(
                 "{}. image most likely belongs to {} with a {:.2f} percent confidence."
-                    .format(i,class_names[np.argmax(score)], 100 * np.max(score))
+                    .format(i, class_names[np.argmax(score)], 100 * np.max(score))
             )
 
-        print(num_correct_dog)
-        print(num_correct_cat)
+        print(num_correct_normal)
+        print(num_correct_covid)
 
 
 def loadnormal():

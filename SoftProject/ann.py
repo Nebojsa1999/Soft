@@ -11,6 +11,9 @@ from matplotlib import rcParams
 import warnings
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
+from numpy.random import seed
+from keras_preprocessing.image import ImageDataGenerator
+from tensorflow.keras.callbacks import EarlyStopping
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 warnings.filterwarnings('ignore')
@@ -22,7 +25,7 @@ rcParams['axes.spines.right'] = False
 def process_image(img_path: str) -> np.array:
     img = Image.open(img_path)
     img = ImageOps.grayscale(img)
-    img = img.resize(size=(180, 180))
+    img = img.resize(size=(150, 150))
     img = np.ravel(img) / 255.0
     return img
 
@@ -48,28 +51,24 @@ def process_folder(folder: pathlib.PosixPath) -> pd.DataFrame:
 
     return processed
 
-def defineTrainingImages():
 
+def defineTrainingImages():
+    seed(0)
+    tf.random.set_seed(0)
     # Training set
     train_covid = process_folder(folder=pathlib.Path.cwd().joinpath('train/covid'))
     train_normal = process_folder(folder=pathlib.Path.cwd().joinpath('train/normal'))
     train_set = pd.concat([train_covid, train_normal], axis=0)
-    with open('train_set.pkl', 'wb') as f:
-        pickle.dump(train_set, f)
+
     # Test set
     test_covid = process_folder(folder=pathlib.Path.cwd().joinpath('test/covid'))
     test_normal = process_folder(folder=pathlib.Path.cwd().joinpath('test/normal'))
     test_set = pd.concat([test_covid, test_normal], axis=0)
-    with open('test_set.pkl', 'wb') as f:
-        pickle.dump(test_set, f)
 
     # Validation set
     valid_covid = process_folder(folder=pathlib.Path.cwd().joinpath('val/covid'))
     valid_normal = process_folder(folder=pathlib.Path.cwd().joinpath('val/normal'))
     valid_set = pd.concat([valid_covid, valid_normal], axis=0)
-
-    with open('valid_set.pkl', 'wb') as f:
-        pickle.dump(valid_set, f)
 
     train_set.head()
 
@@ -91,7 +90,9 @@ def defineTrainingImages():
     y_test = tf.keras.utils.to_categorical(y_test.factorize()[0], num_classes=2)
     class_names = ['covid', 'normal']
     print(class_names)
-
+    X_train_array = X_train.to_numpy()
+    datagen = ImageDataGenerator(rotation_range=90)
+    datagen.fit(X_train_array.reshape(-1,150,150,1))
     model = tf.keras.Sequential([
         tf.keras.layers.Dense(2048, activation='relu'),
         tf.keras.layers.Dense(1024, activation='relu'),
@@ -106,14 +107,17 @@ def defineTrainingImages():
         optimizer=tf.keras.optimizers.Adam(),
         metrics=['accuracy']
     )
-
+    callbacks =[
+        EarlyStopping(patience=5)
+    ]
     history = model.fit(
 
         X_train,
         y_train,
-        epochs=10,
-        batch_size=128,
-        validation_data=(X_valid, y_valid)
+        epochs=100, #100
+        batch_size=10, #10
+        validation_data=(X_valid, y_valid),
+       # callbacks=callbacks
     )
 
     acc = history.history['accuracy']
@@ -122,7 +126,7 @@ def defineTrainingImages():
     loss = history.history['loss']
     val_loss = history.history['val_loss']
 
-    epochs_range = range(10)
+    epochs_range = range(100)
 
     plt.figure(figsize=(8, 8))
     plt.subplot(1, 2, 1)
@@ -141,7 +145,7 @@ def defineTrainingImages():
     probability_model = tf.keras.Sequential([model,
                                              tf.keras.layers.Softmax()])
 
-    predictions = probability_model.predict(X_test, batch_size= 128,verbose = 0)
+    predictions = probability_model.predict(X_test, batch_size=128, verbose=0)
     for i in range(len(X_test)):
         print(
             "{}. image most likely belongs to {} with a {:.5f} percent confidence."
@@ -168,7 +172,7 @@ def defineTrainingImages():
     print("Amount of patients with covid:", num_covid)
     print("Amount of wrong covid classification:", num_correct_normal)
     print("Amount of correct covid classification:", num_correct_covid)
-    print("Accuracy:", num_correct_covid / num_covid)
+    print("Accuracy: {:.2f} %".format((num_correct_covid / num_covid)*100))
     for img_path in pathlib.Path.cwd().joinpath('test/normal').iterdir():
         try:
             img = process_image(img_path=str(img_path))
@@ -184,7 +188,7 @@ def defineTrainingImages():
     print("Amount of patients with normal lungs:", num_normal)
     print("Amount of correct normal predictions:", num_correct_normal2)
     print("Amount of wrong normal predictions:", num_correct_covid2)
-    print("Accuracy:", num_correct_normal2 / num_normal)
+    print("Accuracy: {:.2f} %".format((num_correct_normal2 / num_normal)*100))
 
 
 defineTrainingImages()
